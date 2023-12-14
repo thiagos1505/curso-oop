@@ -1,0 +1,14 @@
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\bin\Debug\net7.0\modulo5.exe
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\bin\Debug\net7.0\modulo5.deps.json
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\bin\Debug\net7.0\modulo5.runtimeconfig.json
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\bin\Debug\net7.0\modulo5.dll
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\bin\Debug\net7.0\modulo5.pdb
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.GeneratedMSBuildEditorConfig.editorconfig
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.AssemblyInfoInputs.cache
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.AssemblyInfo.cs
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.csproj.CoreCompileInputs.cache
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.dll
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\refint\modulo5.dll
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.pdb
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\modulo5.genruntimeconfig.cache
+D:\Thiago\silencioEstudo\CSharp\curso-oop\curso-oop\modulo5\obj\Debug\net7.0\ref\modulo5.dll
