@@ -12,20 +12,20 @@ namespace modulo5
         public double Preco;
         public int Quantidade;
 
-        public Produto(string nome, double preco, int quantidade) {
-           
+        public Produto() {
+            
+            Quantidade = 10;
+        }
+
+        public Produto(string nome, double preco) : this() {
             Nome = nome;
             Preco = preco;
+        }
+
+        public Produto(string nome, double preco, int quantidade) : this(nome, preco) {
             Quantidade = quantidade;
         }
-
-        public Produto(string nome, double preco) {
-            Nome = nome;
-            Preco = preco;
-            Quantidade = 0;
-        }
-
-        public Produto() {}
+        
         
         
         public double ValorTotalEmEstoque() {
@@ -33,7 +33,7 @@ namespace modulo5
         }
         public void AdicionarProdutos(int quantidade) {
         Quantidade += quantidade;
-        }
+        } 
         public void RemoverProdutos(int quantidade) {
         Quantidade -= quantidade;
         }
