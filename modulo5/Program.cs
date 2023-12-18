@@ -1,51 +1,18 @@
 ﻿using System;
-using System.Globalization;
-using System.Net.Http.Headers;
 
-namespace modulo5 {
+namespace Módulo_5 {
     class Program {
         static void Main(string[] args) {
-        
-       
-        Console.WriteLine("Entre os dados do produto:");
-        Console.Write("Nome: ");
-        string nome = Console.ReadLine();
-        
-        Console.Write("Preço: ");
-        double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-        
-        
 
-        Produto p = new Produto(nome, preco);
+            Produto p = new Produto("TV", 500.00, 10);
 
-        Produto p2 = new Produto();
+            p.SetNome("TV 4K");
 
-        Produto p3 = new Produto() {
-            Nome = "TV",
-            Preco = 500.00,
-            Quantidade = 20
-        };
-
-        
-       
-        
-        Console.WriteLine("Dados do produto: " + p);
-        Console.WriteLine();
-        
-        Console.Write("Digite o número de produtos a ser adicionado ao estoque: "); 
-        int qte = int.Parse(Console.ReadLine());
-        p.AdicionarProdutos(qte);
-        Console.WriteLine();
-        
-        Console.WriteLine("Dados atualizados: " + p);
-        Console.WriteLine();
-        
-        Console.Write("Digite o número de produtos a ser removido do estoque: ");
-        qte = int.Parse(Console.ReadLine());
-        p.RemoverProdutos(qte);
-        Console.WriteLine();
-        
-        Console.WriteLine("Dados atualizados: " + p);
+            Console.WriteLine(p.GetNome());
+            Console.WriteLine(p.GetPreco());
+            Console.WriteLine(p.GetQuantidade());
+            
+           
         }
     }
 }

@@ -4,47 +4,59 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Globalization;
 
-namespace modulo5
+namespace Módulo_5
 {
     public class Produto
     {
-        public string? Nome;
-        public double Preco;
-        public int Quantidade;
+    private string? _nome;
+    private double _preco;
+    private int _quantidade;
 
-        public Produto() {
-            
-            Quantidade = 10;
+    public Produto() {
+    }
+
+    public Produto(string nome, double preco, int quantidade) {
+        _nome = nome;
+        _preco = preco;
+        _quantidade = quantidade;
+    }
+
+    public string? GetNome() {
+        return _nome;
         }
 
-        public Produto(string nome, double preco) : this() {
-            Nome = nome;
-            Preco = preco;
-        }
-
-        public Produto(string nome, double preco, int quantidade) : this(nome, preco) {
-            Quantidade = quantidade;
+    public void SetNome(string nome) {
+        if (nome != null && nome.Length > 1) {
+            _nome = nome;
         }
         
-        
-        
-        public double ValorTotalEmEstoque() {
-        return Preco * Quantidade;
-        }
-        public void AdicionarProdutos(int quantidade) {
-        Quantidade += quantidade;
-        } 
-        public void RemoverProdutos(int quantidade) {
-        Quantidade -= quantidade;
-        }
-        public override string ToString() {
-        return Nome
-        + ", $ "
-        + Preco.ToString("F2", CultureInfo.InvariantCulture)
-        + ", "
-        + Quantidade
-        + " unidades, Total: $ "
-        + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
+    }
+
+    public double GetPreco() {
+        return _preco;
+    }
+
+    public int GetQuantidade() {
+        return _quantidade;
+    }
+
+    public double ValorTotalEmEstoque() {
+    return _preco * _quantidade;
+    }
+    public void AdicionarProdutos(int quantidade) {
+    _quantidade += quantidade;
+    }
+    public void RemoverProdutos(int quantidade) {
+    _quantidade -= quantidade;
+    }
+    public override string ToString() {
+    return _nome
+    + ", $ "
+    + _preco.ToString("F2", CultureInfo.InvariantCulture)
+    + ", "
+    + _quantidade
+    + " unidades, Total: $ "
+    + ValorTotalEmEstoque().ToString("F2", CultureInfo.InvariantCulture);
         }
     }
 }
